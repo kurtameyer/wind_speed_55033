@@ -31,12 +31,12 @@ Winds are usually the weakest when coming from the north and strongest when comi
 ### Correlation Bar Chart and Density Plots
 Second, I created a correlation bar chart to indicate which weather variables strongly correlated with wind speed. I also created density plots to assess the shape of the data.
 
-![Correlation Bar Chart](path/to/your/images/correlations2.png)
+![Correlation Bar Chart](images/correlations2.png)
 
 
 Correlations are the strongest with pressure, directions, and precipitation.
 
-![Density Plots](path/to/your/images/density.png)
+![Density Plots](images/density.png)
 Some of the weather variables are normally distributed and others are not.
 
 ## Baseline Models: Simple Linear Regression
