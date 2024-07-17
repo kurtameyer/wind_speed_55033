@@ -17,7 +17,7 @@ Well into EDA, I realized there was a problem with the wind direction component 
 
 ### Converting directions into sine and cosine values
 
-![Sine and Cosine Conversion](./wind_speed_55033/images/sine.jpg)
+![Sine and Cosine Conversion](images/sine.JPG)
 
 ## Exploratory Data Analysis and Visualizations
 
