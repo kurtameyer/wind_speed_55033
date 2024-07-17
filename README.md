@@ -24,15 +24,15 @@ Well into EDA, I realized there was a problem with the wind direction component 
 ### Polar Plot
 First, I wanted to create a polar plot to give me a general idea of the direction in which the wind is strongest. I made a new dataframe with windspeed averages and used Plotly to create the polar plot.
 
-![Polar Plot](path/to/your/image/polar_plot.png)
+![Polar Plot](images/polar_plot.png)
 
 Winds are usually the weakest when coming from the north and strongest when coming from the West, East, and South.
 
 ### Correlation Bar Chart and Density Plots
 Second, I created a correlation bar chart to indicate which weather variables strongly correlated with wind speed. I also created density plots to assess the shape of the data.
 
-![Correlation Bar Chart](path/to/your/image/correlation_bar_chart.png)
-![Density Plots](path/to/your/image/density_plots.png)
+![Correlation Bar Chart](path/to/your/image/correlations2.png)
+![Density Plots](path/to/your/image/density.png)
 
 Correlations are the strongest with pressure, directions, and precipitation.
 
