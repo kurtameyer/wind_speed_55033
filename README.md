@@ -31,11 +31,12 @@ Winds are usually the weakest when coming from the north and strongest when comi
 ### Correlation Bar Chart and Density Plots
 Second, I created a correlation bar chart to indicate which weather variables strongly correlated with wind speed. I also created density plots to assess the shape of the data.
 
-![Correlation Bar Chart](path/to/your/image/correlations2.png)
-![Density Plots](path/to/your/image/density.png)
+![Correlation Bar Chart](path/to/your/images/correlations2.png)
+
 
 Correlations are the strongest with pressure, directions, and precipitation.
 
+![Density Plots](path/to/your/images/density.png)
 Some of the weather variables are normally distributed and others are not.
 
 ## Baseline Models: Simple Linear Regression
@@ -52,14 +53,14 @@ To determine the best set of parameters for the model, I utilized grid search wi
 The model achieved MSE/RMSE of 5.23/2.29 on the test data and an R-squared of .045. Right away, I could tell the additional complexity the random forest regressor offered was paying off.
 Using Sci-Kit Learn I started inspecting various parts of the tree to see where the splits were. It became apparent that the model often made decisions based on wind direction and barometric pressure. Below is a visualization of the top of the tree. The root node splits the tree using sine wind direction, and the child nodes use snow, wind direction, precipitation, and pressure.
 
-![Random Forest Regressor Tree](path/to/your/image/random_forest_tree.png)
+![Random Forest Regressor Tree](images/random_forest_tree.png)
 
 A small portion of the random forest regressor model.
 
 ### Feature Importance
 I also used the feature importance capabilities in Sci-Kit Learn to determine which features were most influential in building the model.
 
-![Feature Importance](path/to/your/image/feature_importance.png)
+![Feature Importance](images/random_forest_features.png)
 
 Wind direction, pressure, and humidity were among the most important features.
 I was not surprised to see wind direction, pressure, and humidity high on the list. However, I was surprised to see daylength had as much of an influence as it did.
@@ -72,7 +73,7 @@ Fine-tuning the Decision Tree Regressor.
 ### Decision Tree Snippet
 Here is a snippet of the decision tree showing the most commonly made splits. They include wind direction, pressure, and weather conditions such as clear, humidity, and precipitation.
 
-![Decision Tree Snippet](path/to/your/image/decision_tree_snippet.png)
+![Decision Tree Snippet](images/decision_tree.png)
 
 Wind direction, pressure, clear weather, and humidity were the most important features.
 The Decision Tree Regressor identified different features as being the most important compared to the Random Forest Regressor. It emphasized precipitation or lack of it more than Random Forest. So, how did the model perform? The MSE/RMSE were 6.41 and 2.52, respectively, and the R-squared was .33. Therefore, this model did not perform as well as its Random Forest counterpart.
